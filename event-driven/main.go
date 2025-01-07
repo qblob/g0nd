@@ -38,7 +38,7 @@ func eventListener() {
 func main() {
 	go eventListener()
 	http.HandleFunc("/", handler)
-	if err := http.ListenAndServe(":8081", nil); err != nil {
+	if err := http.ListenAndServe(":8083", nil); err != nil {
 		log.Fatalf("Server failed to start: %v", err)
 	}
 }
